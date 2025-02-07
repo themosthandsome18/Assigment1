@@ -1,0 +1,207 @@
+body {
+    background-image: linear-gradient(to bottom right, #860e0e, #481d1d, #1b0d0d);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.wrapper>* {
+    flex: 100%;
+}
+/* MY HEADER */
+.header {
+    background: url(GIF.gif) no-repeat center / cover;
+    height: 250px;
+}
+
+/* MY WEBSITE TEXT */
+.text {
+    padding-top: 50px;
+    border-top: 1px solid rgb(127, 19, 17);
+    border-left: 1px solid rgb(86, 1, 1);
+    box-shadow: 0 4px 30px rgb(60, 5, 2);
+    backdrop-filter: blur(3px);
+    width: 40%;
+    margin: 65px auto;
+    padding: 15px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+
+/* GLOW EFFECT OF THE TEXT */
+.glow {
+    letter-spacing: 10px;
+    color: #770000;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+/* NAVIGATION BAR */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background: linear-gradient(to right, #340401, #4a0f0f, #340101);
+    color: #9b9797;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fffbfb;
+    text-decoration: none;
+    padding: 0 23px;
+    height: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.about-me {
+    background-color: #890404e1;
+    color: white;
+    border: 2px solid rgb(4, 1, 1);
+    padding: 15px;
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.about-me-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.projects {
+    flex: 1;
+    background-color: #890404e1;
+    color: white;
+    padding: 20px;
+    margin-left: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-card {
+    color: black;
+    width: 45%;
+    max-width: 500px;
+    background: #ed4747;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+}
+
+.project-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.project-img img {
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #20b2aa;
+    text-decoration: none;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .about-me {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .projects {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .project-card {
+        width: 90%;
+        max-width: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .about-me {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .projects {
+        width: 100%;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: none;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    h2, h3 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size:  0.9em;
+    }
+}
